@@ -28,22 +28,12 @@ function boxNumberGenerator() {
   new Vue({
         el: '#app',
         data: {
-            totalItems: -1,
-            values: []
+
         },
         mounted() {
-            axios.get('https://flynn.boolean.careers/exercises/api/array/integers',
-                {
-                    params: {
-                        min: 1,
-                        max: 100,
-                        items: this.totalItems
-                    }
+            axios.get('https://flynn.boolean.careers/exercises/api/array/music',
                 })
                 .then(data => {
-                    // STRATEGIA 1
-                    // this.values = data.data.response;
-                    // STRATEGIA 2
                     const values = data.data.response;
                     for (let i=0;i<values.length;i++) {
                         const value = values[i];
