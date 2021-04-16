@@ -21,11 +21,11 @@ function diskGenerator() {
       axios.get('https://flynn.boolean.careers/exercises/api/array/music')
       .then(
         preInfo =>
-        {console.log(preInfo);
+        {
+          console.log(preInfo);
 
-          artists = preInfo.data.response;
-          arrArtists.push(artists);
-          console.log(arrArtists);
+          const artists = preInfo.data.response;
+          this.arrArtists = artists;
       })
       .catch(() => console.log(' error'))
     }
