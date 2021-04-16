@@ -11,26 +11,21 @@ ol {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 
   width: 100vw;
   height: 100vh;
 
-  background-color: purple;
+  background-color: rgb(0, 0, 0);
 }
 
-.box {
-  width: 50px;
-  height: 50px;
+.music-box {
+  width: 150px;
+  height: 300px;
 
-  margin: 10px;
-}
+  background-color: rgb(51, 51, 51);
 
-.bg-red {
-  background-color: red;
-}
-
-.bg-green {
-  background-color: green;
+  border-radius: 7px;
 }
