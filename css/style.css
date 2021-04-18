@@ -15,6 +15,14 @@ ol {
   list-style: none;
 }
 
+.search {
+
+}
+
+.s-genre {
+  
+}
+
 .container {
   display: flex;
   justify-content: space-around;
